@@ -4,4 +4,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+header{
+	width: 100vw;
+	background: #000000;
+	height: 80px;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
