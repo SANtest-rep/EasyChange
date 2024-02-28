@@ -20,12 +20,36 @@ body {
 .wrapper > * {
 padding: 20px;
 }
+.main-wrapper {
+    
+    display: flex;
+    flex-grow: 1;
+    background: rgb(139, 78, 78);
+}
 .page-main {
-flex-grow: 1;
-background: rgb(168, 164, 164);
+    padding: 20px;
+    display: flex;
+    
+    justify-content: center;
+    flex-grow: 2;
+    background: rgb(168, 164, 164);
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    background: black;
+    color: white;
+}
+aside {
+    padding: 20px;
+    display: flex;
+    background: black;
+    color: white;
 }
 
 .page-header {
+    padding: 15px 60px;
     background: black;
     color: white;
 }
@@ -33,6 +57,26 @@ background: rgb(168, 164, 164);
 .page-footer {
     background: black;
     color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.first_word {
+    color: #E93147;
+}
+
+.second_word {
+    color: #FFFFFF;
+}
+
+h2 {
+    /* height: 50px; */
+    margin: 0;
+    padding: 0;
+    display: inline;
 }
 
 
