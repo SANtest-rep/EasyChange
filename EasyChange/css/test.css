@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
 }
 .wrapper > * {
-padding: 20px;
+/* padding: 20px; */
 }
 .main-wrapper {
     
@@ -35,16 +35,30 @@ padding: 20px;
     background: rgb(168, 164, 164);
 }
 
-nav {
+.page-footer {
+    padding: 20px;
+    background: #f88383;
+}
+
+.leftSidebar-title {
+    width: 6%;
     padding: 20px;
     display: flex;
     background: black;
     color: white;
 }
+.leftSidebar-content {
+    width: 17%;
+    padding: 25px;
+    display: flex;
+    background: #3C3C3C;
+    color: white;
+}
 aside {
+    width: 13.33333%;
     padding: 20px;
     display: flex;
-    background: black;
+    background: #3C3C3C;
     color: white;
 }
 
