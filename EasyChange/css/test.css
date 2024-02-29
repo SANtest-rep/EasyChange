@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
   
 body {
     display: flex;
@@ -29,24 +32,106 @@ body {
 .page-main {
     padding: 20px;
     display: flex;
-    
     justify-content: center;
     flex-grow: 2;
-    background: rgb(168, 164, 164);
+    background: #E5EDEC;
 }
 
-.page-footer {
-    padding: 20px;
-    background: #f88383;
-}
-
-.leftSidebar-title {
-    width: 6%;
-    padding: 20px;
+.page-header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 60px;
     background: black;
     color: white;
 }
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+.first_word {
+    color: #E93147;
+}
+.second_word {
+    color: #FFFFFF;
+}
+h2 {
+    /* height: 50px; */
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    color: #ffffff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: #E93147; /* фон кнопки */
+    border-radius: 10px;
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: none;
+    margin-left: 40px;
+  } 
+.buttons:hover { background: #ee5163 ; } /* при наведении курсора мышки */
+.buttons:active { background: #9b1c2b; } /* при нажатии */
+
+.leftSidebar-title {
+    width: 6%;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    
+}
+.filter-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cut-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.rotate-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1em 0;
+    background: #000000;
+    color: #8F8F8F;
+    font-size: 1em;
+}
+.filters:hover { background: rgb(100, 100, 100) ; } /* при наведении курсора мышки */
+.filters:active { background: #0a0a0a; } /* при нажатии */
+.active {
+    background: #212121;
+}
+
 .leftSidebar-content {
     width: 17%;
     padding: 25px;
@@ -62,35 +147,7 @@ aside {
     color: white;
 }
 
-.page-header {
-    padding: 15px 60px;
-    background: black;
-    color: white;
-}
 
-.page-footer {
-    background: black;
-    color: white;
-}
 
-.logo {
-    display: flex;
-    align-items: baseline;
-}
-
-.first_word {
-    color: #E93147;
-}
-
-.second_word {
-    color: #FFFFFF;
-}
-
-h2 {
-    /* height: 50px; */
-    margin: 0;
-    padding: 0;
-    display: inline;
-}
 
 
