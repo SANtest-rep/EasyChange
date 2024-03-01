@@ -24,9 +24,9 @@ body {
 /* padding: 20px; */
 }
 .main-wrapper {
-    
     display: flex;
     flex-grow: 1;
+    flex-direction: row;
     background: rgb(139, 78, 78);
 }
 .page-main {
@@ -81,8 +81,13 @@ h2 {
 .buttons:active { background: #9b1c2b; } /* при нажатии */
 
 
+.left-sidebar-container {
+    display: flex;
+    flex-direction: row;
+    width: 23%;
+}
 .leftSidebar-title {
-    width: 6%;
+    width: 25%;
     /* padding: 20px; */
     display: flex;
     flex-direction: column;
@@ -134,7 +139,7 @@ h2 {
 }
 
 .leftSidebar-content {
-    width: 17%;
+    width: 75%;
     padding: 25px;
     display: flex;
     flex-direction: column;
