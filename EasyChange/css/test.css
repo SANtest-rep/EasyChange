@@ -127,8 +127,8 @@ h2 {
     color: #8F8F8F;
     font-size: 1em;
 }
-.filters:hover { background: rgb(100, 100, 100) ; } /* при наведении курсора мышки */
-.filters:active { background: #0a0a0a; } /* при нажатии */
+.filters:hover { background: rgb(68, 68, 68) ; } /* при наведении курсора мышки */
+/* .filters:active { background: #0a0a0a; } при нажатии */
 .active {
     background: #212121;
 }
