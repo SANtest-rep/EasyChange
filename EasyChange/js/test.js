@@ -1,14 +1,3 @@
-// const filter_btn = document.getElementById('filter-btn');
-// const cut_btn = document.getElementById('cut-btn');
-// const rotate_btn = document.getElementById('rotate-btn');
-// const text_btn = document.getElementById('text-btn');
-
-
-// filter_btn.addEventListener('click', function handleClick() {
-//     filter_btn.classList.remove("active");
-// });
-
-
 function toggleItem(elem) {
     for (let i = 0; i < elem.length; i++) {
       elem[i].addEventListener("click", function(e) {
@@ -17,7 +6,8 @@ function toggleItem(elem) {
           if (current != elem[i]) {
             elem[i].classList.remove('active');
           }  else {
-            current.classList.add('active')
+            current.classList.add('active');
+            // console.log("Добавил active", elem[i]);
           }
         }
         e.preventDefault();
@@ -25,3 +15,7 @@ function toggleItem(elem) {
     };
   }
   toggleItem(document.querySelectorAll('.filters'));
+
+
+
+  

@@ -80,6 +80,7 @@ h2 {
 .buttons:hover { background: #ee5163 ; } /* при наведении курсора мышки */
 .buttons:active { background: #9b1c2b; } /* при нажатии */
 
+
 .leftSidebar-title {
     width: 6%;
     /* padding: 20px; */
@@ -136,9 +137,41 @@ h2 {
     width: 17%;
     padding: 25px;
     display: flex;
+    flex-direction: column;
     background: #3C3C3C;
     color: white;
 }
+.slider-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background:rgb(255, 255, 255);
+    border-radius: 10px;
+    height:7px;
+    width: 100%;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:#E93147;
+    height:16px;
+    width:16px;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+
 aside {
     width: 13.33333%;
     padding: 20px;
