@@ -18,4 +18,5 @@ function toggleItem(elem) {
 
 
 
-  
+a = document.getElementById('test').clientWidth;
+alert(a);
