@@ -18,5 +18,5 @@ function toggleItem(elem) {
 
 
 
-a = document.getElementById('test').clientWidth;
+a = document.getElementById('test').clientHeight;
 alert(a);

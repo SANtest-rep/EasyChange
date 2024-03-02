@@ -7,12 +7,15 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    outline: solid red;
 }
   
 body {
     display: flex;
     flex-direction: column;
-    
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
 }
 
 .wrapper {
@@ -28,10 +31,12 @@ body {
     flex-grow: 1;
     flex-direction: row;
     background: rgb(139, 78, 78);
+    
 }
 .page-main {
     /* Ширина 26% */
     padding: 20px;
+    min-width: 430px;
     display: flex;
     justify-content: center;
     flex-grow: 2;
@@ -45,6 +50,7 @@ body {
     padding: 15px 60px;
     background: black;
     color: white;
+    min-width: 990px;
 }
 .logo {
     display: flex;
@@ -208,13 +214,14 @@ aside {
     display: none;
 }
 
-@media (orientatino:landscape) and (max-width: 1400px) {
 
+@media screen and (max-width: 990px) {
+    .page-main {
+        position: absolute;
+        display: flex;
+        
+
+    }
 }
-
-@media (orientatino:landscape) and (max-width: 990px) {
-
-}
-
 
 
