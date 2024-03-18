@@ -63,7 +63,6 @@ body {
     text-decoration: none;
     cursor: pointer;
     border: none;
-    display: none;
 }
 
 .wrapper {
@@ -72,13 +71,14 @@ body {
     flex-direction: row;
     gap: 30px;
     color: black;
-    background-color: purple;
+    background-color: rgb(204, 196, 204);
 }
 
 .wrapper__sidebar-left {
     height: 100%;
     width: 330px;
-    background: #E93147;
+    background: #313131;
+    color: white;
 }
 
 
