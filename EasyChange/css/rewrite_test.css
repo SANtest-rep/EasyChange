@@ -82,8 +82,10 @@ body {
 }
 
 .wrapper__main-content {
-    width: 490px;
-    height: 335px;
+    /* width: 490px;
+    height: 335px; */
+    width: 890px;
+    height: 735px;
     padding: 15px;
     gap: 30px;
     background: white;
@@ -94,8 +96,22 @@ body {
     height: 100%;
     padding: 10px;
     object-fit: contain;
-   
 }
 
+.wrapper__sidebar-left {
+    display: flex;
+}
+.wrapper__sidebar-left__filter-variations {
+    height: 100%;
+    width: 100%;
+    background: #000000;
+}
+.wrapper__sidebar-left__filter-content {
+    height: 100%;
+    width: 100%;
+    background: #3C3C3C;
+}
 
-
+.active {
+    /* display: none; */
+}
