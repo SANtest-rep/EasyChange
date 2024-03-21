@@ -11,6 +11,8 @@ const text = document.querySelector(".wrapper__sidebar-left__filter-variations__
 const textContent = document.querySelector(".wrapper__sidebar-left__filter-content__text-option");
 const brightnessSlider = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__brightness__slider");
 const brightnessValue = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__brightness__info__amount");
+const saturationSlider = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__saturation__slider");
+const saturationValue = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__saturation__info__amount");
 
 
 let brightness = "100", saturation = "100", inversion = "0", grayscale = "0";
@@ -55,8 +57,10 @@ text.addEventListener("click", () => {
 );
 
 const updateFilter = () => {
-    brightnessValue.innerText = `${brightnessSlider.value}%`;
-    brightness = brightnessSlider.value;
+    // brightnessValue.innerText = `${brightnessSlider.value}%`;
+    // brightness = brightnessSlider.value;
+    saturationValue.innerText = `${saturationSlider.value}%`;
+    saturation = saturationSlider.value;
    
     applyFilter();
 }
@@ -86,7 +90,7 @@ const saveImage = () => {
     link.click();
 }
 
-brightnessSlider.addEventListener("input", updateFilter);
+saturationSlider.addEventListener("input", updateFilter);
 inputImage.addEventListener("change", loadImage);
 chooseImgBtn.addEventListener("click", () => inputImage.click());
 
