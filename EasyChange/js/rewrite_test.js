@@ -55,8 +55,6 @@ text.addEventListener("click", () => {
 );
 
 
-
-
 inputImage.addEventListener("change", loadImage);
 chooseImgBtn.addEventListener("click", () => inputImage.click());
 
