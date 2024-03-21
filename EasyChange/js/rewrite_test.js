@@ -11,6 +11,12 @@ const text = document.querySelector(".wrapper__sidebar-left__filter-variations__
 const textContent = document.querySelector(".wrapper__sidebar-left__filter-content__text-option");
 const brightnessSlider = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__brightness__slider");
 const brightnessValue = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__brightness__info__amount");
+const saturationSlider = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__saturation__slider");
+const saturationValue = document.querySelector("wrapper__sidebar-left__filter-content__filters-option__saturation__info__amount");
+const inversionSlider = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__inversion__slider");
+const inversionValue = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__inversion__info__amount");
+const grayscaleSlider = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__grayscale__slider");
+const grayscaleValue = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__grayscale__info__amount");
 
 
 let brightness = "100", saturation = "100", inversion = "0", grayscale = "0";
@@ -54,12 +60,34 @@ text.addEventListener("click", () => {
     }
 );
 
-const updateFilter = () => {
-    brightnessValue.innerText = `${brightnessSlider.value}%`;
-    brightness = brightnessSlider.value;
+// const updateFilter1 = () => {
+//     brightnessValue.innerText = `${brightnessSlider.value}%`;
+//     brightness = brightnessSlider.value;
+   
+//     applyFilter();
+// }
+
+const updateFilter2 = () => {
+    saturationValue.innerText = `${saturationSlider.value}%`;
+    saturation = saturationSlider.value;
+    console.log(saturation);
    
     applyFilter();
 }
+
+// const updateFilter3 = () => {
+//     inversionValue.innerText = `${inversionSlider.value}%`;
+//     inversion = inversionSlider.value;
+   
+//     applyFilter();
+// }
+
+// const updateFilter4 = () => {
+//     grayscaleValue.innerText = `${grayscaleSlider.value}%`;
+//     grayscale = grayscaleSlider.value;
+   
+//     applyFilter();
+// }
 
 const applyFilter = () => {
     previewImg.style.transform = `rotate(${rotate}deg) scale(${flipHorizontal}, ${flipVertical})`;
@@ -86,7 +114,10 @@ const saveImage = () => {
     link.click();
 }
 
-brightnessSlider.addEventListener("input", updateFilter);
+// brightnessSlider.addEventListener("input", updateFilter1);
+saturationSlider.addEventListener("input", updateFilter2);
+// inversionSlider.addEventListener("input", updateFilter3);
+// grayscaleSlider.addEventListener("input", updateFilter4);
 inputImage.addEventListener("change", loadImage);
 chooseImgBtn.addEventListener("click", () => inputImage.click());
 
