@@ -153,7 +153,6 @@ const resetFilter = () => {
     grayscaleValue.innerText = `${grayscale}%`;
     grayscaleSlider.value = grayscale;
     applyFilter();
-
 }
 
 
@@ -164,6 +163,7 @@ grayscaleSlider.addEventListener("input", updateFilter4);
 inputImage.addEventListener("change", loadImage);
 chooseImgBtn.addEventListener("click", () => inputImage.click());
 saveBtn.addEventListener("click", saveImage);
+resetFilters.addEventListener("click", resetFilter);
 resetFilters.addEventListener("click", resetFilter);
 
 
