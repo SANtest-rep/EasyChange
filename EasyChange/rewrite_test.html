@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/rewrite_test.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <title>EasyChange</title>
 </head>
 <body>
@@ -64,11 +66,21 @@
                     </div>
 
                 </div>
+
                 <div class="wrapper__sidebar-left__filter-content__cut-option" hidden>Обрезка-в</div>
-                <div class="wrapper__sidebar-left__filter-content__rotate-option" hidden>Поворот-в
-                    <div class="wrapper__sidebar-left__filter-content__rotate-option__rotate-left">Поворот влево</div>
-                    <div class="wrapper__sidebar-left__filter-content__rotate-option__rotate-right">Поворот вправо</div>
+
+                <div class="wrapper__sidebar-left__filter-content__rotate-option" hidden>
+
+                    <button id="left-rotate" class="wrapper__sidebar-left__filter-content__rotate-option__rotate-left fa-solid fa-rotate-left"></button>
+
+                    <button id="right-rotate" class="wrapper__sidebar-left__filter-content__rotate-option__rotate-right fa-solid fa-rotate-right"></button>
+
+                    <button id="mirror-horizontal" class="wrapper__sidebar-left__filter-content__rotate-option__mirror-horizontal bx bx-reflect-vertical"></button>
+
+                    <button id="mirror-vertical" class="wrapper__sidebar-left__filter-content__rotate-option__mirror-vertical bx bx-reflect-horizontal"></button>
+
                 </div>
+
                 <div class="wrapper__sidebar-left__filter-content__text-option" hidden>Текст-в</div>
             </div>
         </div>

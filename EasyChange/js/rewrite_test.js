@@ -17,6 +17,7 @@ const inversionSlider = document.querySelector(".wrapper__sidebar-left__filter-c
 inversionValue = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__inversion__info__amount");
 const grayscaleSlider = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__grayscale__slider"),
 grayscaleValue = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__grayscale__info__amount");
+const rotateOptions = document.querySelectorAll(".wrapper__sidebar-left__filter-content__rotate-option button");
 
 
 let brightness = "100", saturation = "100", inversion = "0", grayscale = "0";
@@ -29,8 +30,8 @@ const loadImage = () => {
     if(!image) return;
     previewImg.src = URL.createObjectURL(image);
     previewImg.addEventListener("load", () => {
-        resetFilterBtn.click();
-        document.querySelector(".container").classList.remove("disable");
+        // resetFilterBtn.click();
+        // document.querySelector(".container").classList.remove("disable");
     });
 }
 
@@ -99,6 +100,23 @@ const applyFilter = () => {
     previewImg.style.transform = `rotate(${rotate}deg) scale(${flipHorizontal}, ${flipVertical})`;
     previewImg.style.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
 }
+
+rotateOptions.forEach(option => {
+    option.addEventListener("click", () => {
+        if(option.id === "left-rotate") {
+            rotate -= 90;
+        } else if(option.id === "right-rotate") {
+            rotate += 90;
+        } else if(option.id === "mirror-horizontal") {
+            flipHorizontal = flipHorizontal === 1 ? -1 : 1;
+        } else if(option.id === "mirror-vertical"){
+            flipVertical = flipVertical === 1 ? -1 : 1;
+        }
+        applyFilter();
+    });
+});
+
+
 
 const saveImage = () => {
     const canvas = document.createElement("canvas");
