@@ -18,6 +18,7 @@ inversionValue = document.querySelector(".wrapper__sidebar-left__filter-content_
 const grayscaleSlider = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__grayscale__slider"),
 grayscaleValue = document.querySelector(".wrapper__sidebar-left__filter-content__filters-option__grayscale__info__amount");
 const rotateOptions = document.querySelectorAll(".wrapper__sidebar-left__filter-content__rotate-option button");
+const saveBtn = document.querySelector(".header__buttons__button-save");
 
 
 let brightness = "100", saturation = "100", inversion = "0", grayscale = "0";
@@ -144,6 +145,7 @@ inversionSlider.addEventListener("input", updateFilter3);
 grayscaleSlider.addEventListener("input", updateFilter4);
 inputImage.addEventListener("change", loadImage);
 chooseImgBtn.addEventListener("click", () => inputImage.click());
+saveBtn.addEventListener("click", saveImage);
 
 
 
