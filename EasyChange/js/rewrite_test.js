@@ -32,8 +32,8 @@ const loadImage = () => {
     if(!image) return;
     previewImg.src = URL.createObjectURL(image);
     previewImg.addEventListener("load", () => {
-        // resetFilterBtn.click();
-        // document.querySelector(".container").classList.remove("disable");
+        resetFilterBtn.click();
+        document.querySelector(".container").classList.remove("disable");
     });
 }
 
@@ -153,7 +153,7 @@ const resetFilter = () => {
     grayscaleValue.innerText = `${grayscale}%`;
     grayscaleSlider.value = grayscale;
     applyFilter();
-    
+
 }
 
 
